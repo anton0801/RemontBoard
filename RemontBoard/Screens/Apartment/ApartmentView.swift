@@ -5,6 +5,7 @@ struct ApartmentView: View {
     @State private var showAddRoom   = false
     @State private var selectedRoom  : Room?
     @State private var animateCards  = false
+    @State private var showSearch    = false
 
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
 
@@ -59,6 +60,13 @@ struct ApartmentView: View {
             .navigationTitle("My Apartment")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button { showSearch = true } label: {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(AppColors.accent)
+                            .font(.system(size: 18))
+                    }
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button { showAddRoom = true } label: {
                         Image(systemName: "plus.circle.fill")
@@ -77,6 +85,9 @@ struct ApartmentView: View {
         }
         .sheet(item: $selectedRoom) { room in
             RoomDetailView(room: room).environmentObject(appVM)
+        }
+        .sheet(isPresented: $showSearch) {
+            GlobalSearchView().environmentObject(appVM)
         }
     }
 }

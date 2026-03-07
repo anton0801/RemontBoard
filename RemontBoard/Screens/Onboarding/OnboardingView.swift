@@ -150,3 +150,6 @@ struct OnboardingPageView: View {
         .onDisappear { appeared = false }
     }
 }
+
+// Extension to pass authService through onboarding flow
+// (authService is available via environment, GuestButton uses it)

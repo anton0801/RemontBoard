@@ -6,11 +6,52 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F6583102F5CA0B900E8C5B9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8F65830F2F5CA0B900E8C5B9 /* FirebaseAuth */; };
+		8F6583122F5CA0B900E8C5B9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6583112F5CA0B900E8C5B9 /* FirebaseDatabase */; };
+		8F6583142F5CA0B900E8C5B9 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6583132F5CA0B900E8C5B9 /* FirebaseMessaging */; };
+		8F6583172F5CA0C300E8C5B9 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6583162F5CA0C300E8C5B9 /* AppsFlyerLib */; };
+		8F6583312F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F65832A2F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F6583392F5CAE2A00E8C5B9 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6583382F5CAE2A00E8C5B9 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F65832F2F5CAE1E00E8C5B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB60A832F4C7BD200BDE229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F6583292F5CAE1E00E8C5B9;
+			remoteInfo = RemontExtensionBoardNotif;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F6583362F5CAE1E00E8C5B9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F6583312F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8F65832A2F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RemontExtensionBoardNotif.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB60A8B2F4C7BD200BDE229 /* RemontBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemontBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F6583352F5CAE1E00E8C5B9 /* Exceptions for "RemontExtensionBoardNotif" folder in "RemontExtensionBoardNotif" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8F6583292F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif */;
+		};
 		8FB60AD92F4C825200BDE229 /* Exceptions for "RemontBoard" folder in "RemontBoard" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -21,6 +62,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8F65832B2F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F6583352F5CAE1E00E8C5B9 /* Exceptions for "RemontExtensionBoardNotif" folder in "RemontExtensionBoardNotif" target */,
+			);
+			path = RemontExtensionBoardNotif;
+			sourceTree = "<group>";
+		};
 		8FB60A8D2F4C7BD200BDE229 /* RemontBoard */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,20 +81,41 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F6583272F5CAE1E00E8C5B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6583392F5CAE2A00E8C5B9 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FB60A882F4C7BD200BDE229 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6583142F5CA0B900E8C5B9 /* FirebaseMessaging in Frameworks */,
+				8F6583172F5CA0C300E8C5B9 /* AppsFlyerLib in Frameworks */,
+				8F6583122F5CA0B900E8C5B9 /* FirebaseDatabase in Frameworks */,
+				8F6583102F5CA0B900E8C5B9 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6583372F5CAE2A00E8C5B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FB60A822F4C7BD200BDE229 = {
 			isa = PBXGroup;
 			children = (
 				8FB60A8D2F4C7BD200BDE229 /* RemontBoard */,
+				8F65832B2F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif */,
+				8F6583372F5CAE2A00E8C5B9 /* Frameworks */,
 				8FB60A8C2F4C7BD200BDE229 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB60A8B2F4C7BD200BDE229 /* RemontBoard.app */,
+				8F65832A2F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +132,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8F6583292F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F6583322F5CAE1E00E8C5B9 /* Build configuration list for PBXNativeTarget "RemontExtensionBoardNotif" */;
+			buildPhases = (
+				8F6583262F5CAE1E00E8C5B9 /* Sources */,
+				8F6583272F5CAE1E00E8C5B9 /* Frameworks */,
+				8F6583282F5CAE1E00E8C5B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8F65832B2F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif */,
+			);
+			name = RemontExtensionBoardNotif;
+			packageProductDependencies = (
+				8F6583382F5CAE2A00E8C5B9 /* FirebaseMessaging */,
+			);
+			productName = RemontExtensionBoardNotif;
+			productReference = 8F65832A2F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8FB60A8A2F4C7BD200BDE229 /* RemontBoard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FB60A972F4C7BD300BDE229 /* Build configuration list for PBXNativeTarget "RemontBoard" */;
@@ -68,16 +162,22 @@
 				8FB60A872F4C7BD200BDE229 /* Sources */,
 				8FB60A882F4C7BD200BDE229 /* Frameworks */,
 				8FB60A892F4C7BD200BDE229 /* Resources */,
+				8F6583362F5CAE1E00E8C5B9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F6583302F5CAE1E00E8C5B9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8FB60A8D2F4C7BD200BDE229 /* RemontBoard */,
 			);
 			name = RemontBoard;
 			packageProductDependencies = (
+				8F65830F2F5CA0B900E8C5B9 /* FirebaseAuth */,
+				8F6583112F5CA0B900E8C5B9 /* FirebaseDatabase */,
+				8F6583132F5CA0B900E8C5B9 /* FirebaseMessaging */,
+				8F6583162F5CA0C300E8C5B9 /* AppsFlyerLib */,
 			);
 			productName = RemontBoard;
 			productReference = 8FB60A8B2F4C7BD200BDE229 /* RemontBoard.app */;
@@ -93,6 +193,9 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					8F6583292F5CAE1E00E8C5B9 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					8FB60A8A2F4C7BD200BDE229 = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -107,17 +210,29 @@
 			);
 			mainGroup = 8FB60A822F4C7BD200BDE229;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F65830E2F5CA0B900E8C5B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8F6583152F5CA0C300E8C5B9 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FB60A8C2F4C7BD200BDE229 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8FB60A8A2F4C7BD200BDE229 /* RemontBoard */,
+				8F6583292F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F6583282F5CAE1E00E8C5B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FB60A892F4C7BD200BDE229 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +243,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F6583262F5CAE1E00E8C5B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FB60A872F4C7BD200BDE229 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +259,76 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8F6583302F5CAE1E00E8C5B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F6583292F5CAE1E00E8C5B9 /* RemontExtensionBoardNotif */;
+			targetProxy = 8F65832F2F5CAE1E00E8C5B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8F6583332F5CAE1E00E8C5B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemontExtensionBoardNotif/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RemontExtensionBoardNotif;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardremonts.RemontBoard.RemontExtensionBoardNotif;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8F6583342F5CAE1E00E8C5B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemontExtensionBoardNotif/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RemontExtensionBoardNotif;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boardremonts.RemontBoard.RemontExtensionBoardNotif;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		8FB60A952F4C7BD300BDE229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,6 +457,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Remont Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use features of application";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Remont Board may collect limited technical data from your device to support planning and organization features, ensure stable app performance, and improve overall usability. This information is used only for internal diagnostics and feature enhancements. We do not use this data to track users across other apps or websites, and it is not shared for third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -280,7 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boardremonts.RemontBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -308,6 +500,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Remont Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use features of application";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Remont Board may collect limited technical data from your device to support planning and organization features, ensure stable app performance, and improve overall usability. This information is used only for internal diagnostics and feature enhancements. We do not use this data to track users across other apps or websites, and it is not shared for third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -322,7 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boardremonts.RemontBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -339,6 +532,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F6583322F5CAE1E00E8C5B9 /* Build configuration list for PBXNativeTarget "RemontExtensionBoardNotif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6583332F5CAE1E00E8C5B9 /* Debug */,
+				8F6583342F5CAE1E00E8C5B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8FB60A862F4C7BD200BDE229 /* Build configuration list for PBXProject "RemontBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -358,6 +560,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F65830E2F5CA0B900E8C5B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+		8F6583152F5CA0C300E8C5B9 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F65830F2F5CA0B900E8C5B9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F65830E2F5CA0B900E8C5B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8F6583112F5CA0B900E8C5B9 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F65830E2F5CA0B900E8C5B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8F6583132F5CA0B900E8C5B9 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F65830E2F5CA0B900E8C5B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8F6583162F5CA0C300E8C5B9 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F6583152F5CA0C300E8C5B9 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		8F6583382F5CAE2A00E8C5B9 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F65830E2F5CA0B900E8C5B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FB60A832F4C7BD200BDE229 /* Project object */;
 }
